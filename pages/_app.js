@@ -1,5 +1,5 @@
-import '../styles/globals.css';
 import Layout from '../layout/Layout';
+import { makeStyles } from '@material-ui/styles';
 
 function MyApp({ Component, pageProps }) {
   return (
