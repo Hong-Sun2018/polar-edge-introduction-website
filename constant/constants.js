@@ -16,3 +16,22 @@ export const HeaderNavLinks = [
 		link: '/contact'
 	}
 ];
+
+export const FooterNavLinks = [
+	{
+		title: 'home',
+		link: '/'
+	},
+	{
+		title: 'press',
+		link: '/press'
+	},
+	{
+		title: 'team',
+		link: '/team'
+	},
+	{
+		title:'media',
+		link: '/media'
+	}
+];

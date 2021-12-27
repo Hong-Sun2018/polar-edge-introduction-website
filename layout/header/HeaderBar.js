@@ -1,5 +1,5 @@
 import { makeStyles } from "@material-ui/core/styles";
-import NavBar from "./NavBar";
+import NavBarHeader from "./NavBarHeader";
 
 const useStyles = makeStyles({
 	root: {
@@ -41,7 +41,7 @@ const HeaderBar = () => {
 				logo
 			</div>
 			<div className={classes.navi}>
-				<NavBar />
+				<NavBarHeader />
 			</div>	
     </div>
   );

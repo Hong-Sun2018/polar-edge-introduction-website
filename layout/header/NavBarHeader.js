@@ -13,7 +13,7 @@ const useStyles = makeStyles({
 	}
 });
 
-const NavBar = () => {
+const NavBarHeader = () => {
 	const classes = useStyles();
 
   return (
@@ -25,4 +25,4 @@ const NavBar = () => {
 	);
 };
 
-export default NavBar;
+export default NavBarHeader;
