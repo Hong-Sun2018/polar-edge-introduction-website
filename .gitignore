@@ -14,7 +14,6 @@
 
 # production
 /build
-startup.sh
 
 # misc
 .DS_Store
