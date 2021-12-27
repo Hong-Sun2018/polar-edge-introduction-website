@@ -1,5 +1,5 @@
-import HeaderBar from "./HeaderBar";
-import FooterBar from "./FooterBar";
+import HeaderBar from "./header/HeaderBar";
+import FooterBar from "./footer/FooterBar";
 
 const Layout = ( {children} ) => {
     return (
