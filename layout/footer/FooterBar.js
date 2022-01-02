@@ -9,7 +9,7 @@ const useStyles = makeStyles({
     background: '#333333',
   },
   continer: {
-		width: '95%',
+		width: '90%',
     height: '9em',
 		marginLeft: 'auto',
 		marginRight: 'auto',
