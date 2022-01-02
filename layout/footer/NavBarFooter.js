@@ -7,7 +7,7 @@ const useStyles = makeStyles({
     width: '6em',
 		display: 'flex',
 		flexDirection: 'column',
-    background: 'pink',
+    // background: 'pink',
 	},
 	title:{
 		paddingBottom:'5px',
