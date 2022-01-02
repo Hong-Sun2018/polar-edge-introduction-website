@@ -1,4 +1,4 @@
-import { Link } from "@material-ui/core";
+import { Hidden, Link } from "@material-ui/core";
 import { HeaderNavLinks } from "../../constant/constants";
 import { makeStyles } from "@material-ui/core"; 
 
@@ -17,11 +17,13 @@ const NavBarHeader = () => {
 	const classes = useStyles();
 
   return (
+	  <Hidden smDown>
 		<div className={classes.root}>
 			{ HeaderNavLinks.map((item, index) => {
 				return <Link className={classes.link} key={index} href={item.link}>{item.title}</Link>
 			})}
 		</div>
+	</Hidden>
 	);
 };
 
