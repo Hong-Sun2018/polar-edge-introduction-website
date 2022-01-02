@@ -5,6 +5,10 @@ const useStyles = makeStyles({
 	root: {
   	margin: 0,
 		padding: 0,
+		width: '100%',
+    background: '#333333',
+  },
+  continer: {
 		width: '95%',
     height: '9em',
 		marginLeft: 'auto',
@@ -12,7 +16,7 @@ const useStyles = makeStyles({
 		display: 'flex',
 		flexDirection:'row',
 		alignItems: 'center',
-    background: 'yellow',
+    color:'white',
   },
 	logo: {
 		width: '25%',
@@ -20,7 +24,7 @@ const useStyles = makeStyles({
 		flexDirection: 'column',
 		alignItems: 'flex-start',
 		justifyContent: 'center',
-		background: 'green'
+		// background: 'green'
 	},
   social: {
     width: '50%',
@@ -29,7 +33,7 @@ const useStyles = makeStyles({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-evenly',
-    background: 'red',
+    // background: 'red',
   },
 	navi: {
 		width: '25%',
@@ -38,7 +42,7 @@ const useStyles = makeStyles({
 		flexDirection: 'row',
 		alignItems: 'center',
 		justifyContent: 'flex-start',
-		background: 'green',
+		// background: 'green',
 	}
 });
 
@@ -48,20 +52,22 @@ const FooterBar = () => {
 
   return (
     <div className={classes.root}>
-      <div className={classes.logo}>
-        <div>Footer Logo</div>
-        <div>Copy Right</div>
-      </div>
-      <div className={classes.social}>
-        {/*
-        <div>social 1</div>
-        <div>social 2</div>
-        <div>social 3</div>
-        <div>social 4</div>
-        */}
-      </div>
-      <div className={classes.navi}>
-        <NavBarFooter />
+      <div className={classes.continer}>
+        <div className={classes.logo}>
+          <div>Footer Logo</div>
+          <div>Copy Right</div>
+        </div>
+        <div className={classes.social}>
+          {/*
+          <div>social 1</div>
+          <div>social 2</div>
+          <div>social 3</div>
+          <div>social 4</div>
+          */}
+        </div>
+        <div className={classes.navi}>
+          <NavBarFooter />
+        </div>
       </div>
     </div>
   )

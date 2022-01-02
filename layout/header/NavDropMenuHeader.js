@@ -5,7 +5,12 @@ import { useState } from 'react';
 import { HeaderNavLinks } from '../../constant/constants';
 
 const useStyles = makeStyles({
-  
+  icon:{
+    color:'white',
+  },
+  link: {
+    color:'black'
+  }
 });
 
 
@@ -29,7 +34,7 @@ const NavDropMenuHeader = () => {
         onClick={handleClick}
         aria-label='settings'
       >
-        <MenuIcon />
+        <MenuIcon className={classes.icon}/>
       </IconButton>
       <Menu 
         anchorEl={anchorEl}
@@ -40,7 +45,7 @@ const NavDropMenuHeader = () => {
         {HeaderNavLinks.map((item, index) => {
           return (
             <MenuItem key={index} onClick={handleClose}>
-              <Link key={index} href={item.link}>{item.title}</Link>
+              <Link className={classes.link} key={index} href={item.link}>{item.title}</Link>
             </MenuItem>
           );
         })}

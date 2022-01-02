@@ -7,11 +7,15 @@ const useStyles = makeStyles({
     width: '7em',
 		display: 'flex',
 		flexDirection: 'column',
-    background: 'pink',
+    // background: 'pink',
+	},
+	title:{
+		paddingBottom:'5px',
 	},
 	link: {
 		marginLeft: '1em',
 		marginRight: '1em',
+		color: 'white',
 	}
 });
 
@@ -20,7 +24,7 @@ const NavBarFooter = () => {
 
   return (
 		<div className={classes.root}>
-      <div>Site Map: </div>
+      <div className={classes.title}>Site Map: </div>
 			{ FooterNavLinks.map((item, index) => {
 				return (
           <Link className={classes.link} key={index} href={item.link}>{item.title}</Link>
