@@ -19,7 +19,7 @@ const useStyles = makeStyles({
     color:'white',
   },
 	logo: {
-		width: '25%',
+		width: '50%',
 		display: 'flex',
 		flexDirection: 'column',
 		alignItems: 'flex-start',
@@ -41,7 +41,7 @@ const useStyles = makeStyles({
 		display: 'flex',
 		flexDirection: 'row',
 		alignItems: 'center',
-		justifyContent: 'flex-start',
+		justifyContent: 'flex-end',
 		// background: 'green',
 	}
 });
@@ -57,14 +57,15 @@ const FooterBar = () => {
           <div>Footer Logo</div>
           <div>Copy Right</div>
         </div>
+        {/*
         <div className={classes.social}>
-          {/*
           <div>social 1</div>
           <div>social 2</div>
           <div>social 3</div>
           <div>social 4</div>
-          */}
+        
         </div>
+        */}
         <div className={classes.navi}>
           <NavBarFooter />
         </div>

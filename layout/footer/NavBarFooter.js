@@ -4,10 +4,10 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles({
 	root: {
-    width: '7em',
+    width: '6em',
 		display: 'flex',
 		flexDirection: 'column',
-    // background: 'pink',
+    background: 'pink',
 	},
 	title:{
 		paddingBottom:'5px',
