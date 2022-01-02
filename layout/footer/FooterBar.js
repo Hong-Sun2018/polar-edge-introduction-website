@@ -53,10 +53,12 @@ const FooterBar = () => {
         <div>Copy Right</div>
       </div>
       <div className={classes.social}>
+        {/*
         <div>social 1</div>
         <div>social 2</div>
         <div>social 3</div>
         <div>social 4</div>
+        */}
       </div>
       <div className={classes.navi}>
         <NavBarFooter />

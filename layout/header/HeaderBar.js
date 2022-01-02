@@ -1,5 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
-import NavBarHeader from "./NavBarHeader";
+import { makeStyles } from '@material-ui/core/styles';
+import NavBarHeader from './NavBarHeader';
+import NavDropMenuHeader from './NavDropMenuHeader';
 
 const useStyles = makeStyles({
 	root: {
@@ -42,6 +43,7 @@ const HeaderBar = () => {
 			</div>
 			<div className={classes.navi}>
 				<NavBarHeader />
+				<NavDropMenuHeader />
 			</div>	
     </div>
   );
