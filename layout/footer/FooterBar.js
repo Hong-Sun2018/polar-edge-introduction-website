@@ -1,5 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 import NavBarFooter from './NavBarFooter';
+import Image from 'next/image';
+import FooterLogo from '../../public/assets/images/footer_logo.png';
 
 const useStyles = makeStyles({
 	root: {
@@ -16,7 +18,7 @@ const useStyles = makeStyles({
 		display: 'flex',
 		flexDirection:'row',
 		alignItems: 'center',
-    color:'white',
+    color:'#baaef7',
   },
 	logo: {
 		width: '50%',
@@ -54,7 +56,9 @@ const FooterBar = () => {
     <div className={classes.root}>
       <div className={classes.continer}>
         <div className={classes.logo}>
-          <div>Footer Logo</div>
+          <div>
+            <Image src={FooterLogo} width={100} height={80}/>
+          </div>
           <div>Copy Right</div>
         </div>
         {/*

@@ -10,7 +10,7 @@ const useStyles = makeStyles({
 	link: {
 		marginLeft: '1em',
 		marginRight: '1em',
-		color:'white',
+		color:'#baaef7',
 	}
 });
 

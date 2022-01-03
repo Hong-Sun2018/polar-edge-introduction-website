@@ -6,10 +6,11 @@ import { HeaderNavLinks } from '../../constant/constants';
 
 const useStyles = makeStyles({
   icon:{
-    color:'white',
+    color:'#baaef7',
   },
   link: {
-    color:'black'
+    color:'#baaef7',
+    // background: 'lightGray',
   }
 });
 

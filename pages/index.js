@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { makeStyles } from '@material-ui/styles';
-import HomeBannerImage from '../public/assets/images/home-banner.png';
 import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles({
@@ -14,7 +13,8 @@ const useStyles = makeStyles({
     minHeight: '500px',
     width: '100%',
     alignItems: 'center',
-    // backgroundColor: '#93e69f',
+    color: '#333333',
+    // backgroundColor: '#757575',
   },
   homeBanner:{
     margin: 0,
@@ -42,9 +42,22 @@ const useStyles = makeStyles({
     margin: 0,
     width: '100%',
   },
-  h1: {
+  section: {
+    width: '95%',
+    marginTop: '4em',
+    marginBottom:'4em',
+  },
+  heading: {
     textAlign:'center',
-  }
+    marginTop: '40px',
+    marginBottom:'30px',
+  },
+  content: {
+    width: '10em',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+  },
+
 });
 
 export default function Home() {
@@ -53,11 +66,22 @@ export default function Home() {
 
   return (
     <div className={classes.root} >
+      {/* banner */}
       <div className={classes.homeBanner}>
         <Typography className={classes.bannerText} variant='h3'>PolarEdge</Typography>
-        <Typography className={classes.bannerText} variant="h6">An open IoT Edge Platform to  manage ubiquitous device connection and accelerate business operation</Typography>
+        <Typography className={classes.bannerText} variant="h5">An open IoT Edge Platform to  manage ubiquitous device connection and accelerate business operation</Typography>
       </div>
-      <h1>Welcom to PolarEdge</h1>
+
+      {/* product */}
+      <div className={classes.section}>
+        <Typography variant="h3" className={classes.heading}>Our Product</Typography>
+        <div className={classes.content}>
+          <Typography variant="h6">· PolarEdge PaaS</Typography>
+          <Typography variant="h6">· EdgeAI</Typography>
+          <Typography variant="h6">· EdgeBox</Typography>
+          <Typography variant="h6">· Consultancy</Typography>
+        </div>
+      </div>
     </div>
   )
 }
