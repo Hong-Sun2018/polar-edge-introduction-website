@@ -41,7 +41,7 @@ const SupervisorCard = ({name, institute, title, desc}) => {
     },
     desc: {
       textAlign: 'justify', 
-    },
+    }, 
   });
 
   const classes = useSytles();
