@@ -1,7 +1,8 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from 'next/head';
+import Image from 'next/image';
 import { makeStyles } from '@material-ui/styles';
-import { Typography } from '@material-ui/core';
+import { Typography, Grid } from '@material-ui/core';
+import OutlinedButton from '../components/OutlinedButton';
 
 const useStyles = makeStyles({
   root: {
@@ -10,7 +11,7 @@ const useStyles = makeStyles({
     border:0,
     display: 'flex',
     flexDirection: 'column',
-    minHeight: '500px',
+    minHeight: '1100px',
     width: '100%',
     alignItems: 'center',
     color: '#333333',
@@ -56,6 +57,7 @@ const useStyles = makeStyles({
     width: '10em',
     marginLeft: 'auto',
     marginRight: 'auto',
+    marginBottom:'2em',
   },
 
 });
@@ -74,13 +76,21 @@ export default function Home() {
 
       {/* product */}
       <div className={classes.section}>
-        <Typography variant="h3" className={classes.heading}>Our Product</Typography>
+        <Typography variant="h3" className={classes.heading}>Our Products</Typography>
         <div className={classes.content}>
           <Typography variant="h6">· PolarEdge PaaS</Typography>
           <Typography variant="h6">· EdgeAI</Typography>
           <Typography variant="h6">· EdgeBox</Typography>
           <Typography variant="h6">· Consultancy</Typography>
         </div>
+        <Grid container alignItems="center" justifyContent="center">
+          <Grid item md={3} sm={12} xs={12}>
+            <OutlinedButton href="/product">Know More</OutlinedButton>
+          </Grid>
+          <Grid item md={3} sm={12}xs={12}>
+            <OutlinedButton>Contact Us</OutlinedButton>
+          </Grid>
+        </Grid>
       </div>
     </div>
   )

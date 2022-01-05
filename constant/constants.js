@@ -1,18 +1,18 @@
 export const HeaderNavLinks = [
   {
-    title: 'home',
+    title: 'Home',
 		link: '/'
   },
 	{
-		title: 'project',
-		link: '/project'
+		title: 'Product',
+		link: '/product'
 	},
 	{
-		title: 'about',
+		title: 'About',
 		link: '/about'
 	},
 	{
-		title:'contact',
+		title:'Contact',
 		link: '/contact'
 	}
 ];

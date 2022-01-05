@@ -28,6 +28,11 @@ const useStyles = makeStyles({
 		justifyContent: 'center',
 		// background: 'green'
 	},
+  logoCopy:{
+    display: 'flex',
+    flexDirection:'column',
+    alignItems:'center',
+  },
   social: {
     width: '50%',
     paddingLeft: '5em',
@@ -56,10 +61,10 @@ const FooterBar = () => {
     <div className={classes.root}>
       <div className={classes.continer}>
         <div className={classes.logo}>
-          <div>
+          <div className={classes.logoCopy}>
             <Image src={FooterLogo} width={100} height={80}/>
+            <div>&copy; PolarEdge 2022</div>
           </div>
-          <div>Copy Right</div>
         </div>
         {/*
         <div className={classes.social}>

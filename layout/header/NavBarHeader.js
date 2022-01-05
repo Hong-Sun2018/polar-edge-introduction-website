@@ -11,6 +11,7 @@ const useStyles = makeStyles({
 		marginLeft: '1em',
 		marginRight: '1em',
 		color:'#baaef7',
+		fontSize: '1.3em',
 	}
 });
 
