@@ -1,10 +1,9 @@
 import { makeStyles } from "@material-ui/styles";
-import Image from "next/image";
 import { Typography, Grid } from "@material-ui/core";
 
-const TeamMemberCard = ({imgSrc, name, title, desc}) => {
+const SupervisorCard = ({name, institute, title, desc}) => {
 
-  const useStyles = makeStyles({
+  const useSytles = makeStyles({
     root: {
       width: '100%',
       maxWidth: '800px',
@@ -18,7 +17,7 @@ const TeamMemberCard = ({imgSrc, name, title, desc}) => {
     },
     imgNameTitleContainer: {
       display: 'flex',
-      width: '300px',
+      width: '250px',
       flexDirection: 'column',
       justifyContent:'center',
       alignItems: 'center',
@@ -27,36 +26,33 @@ const TeamMemberCard = ({imgSrc, name, title, desc}) => {
       marginTop: '1em',
 
     },
-    img: {
-      width: '100px',
-      height: '130px',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundImage: `url(/assets/images/team/${imgSrc})`,
-      backgroundRepeat: 'no-repeat',
-    },
     name: {
       fontWeight: 'bold',
       marginTop: '1em',
     },
+    institute: {
+      marginTop: '1em',
+      marginBottom: '1em',
+      textAlign: 'center',
+    },
     title: {
       marginBottom: '1em',
+      textAlign: 'center',
     },
     desc: {
       textAlign: 'justify', 
     },
   });
-  
 
-  const classes = useStyles();
+  const classes = useSytles();
 
   return (
     <div className={classes.root}> 
       <Grid container justifyContent="center" alignItems="center">
         <Grid item md={5} sm={12} xs={12}>
           <div className={classes.imgNameTitleContainer}>
-            <div className={classes.img}></div>
             <Typography className={classes.name}>{name}</Typography>
+            <Typography className={classes.institute}> {institute}</Typography>
             <Typography className={classes.title}>{title}</Typography>
           </div>
         </Grid>
@@ -70,4 +66,4 @@ const TeamMemberCard = ({imgSrc, name, title, desc}) => {
   );
 }
 
-export default TeamMemberCard;
+export default SupervisorCard;
